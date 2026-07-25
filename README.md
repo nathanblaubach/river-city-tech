@@ -17,7 +17,7 @@ This allows the upload process to happen without the need for manually
 
 ## Setup
 
-You will need to have [Python](https://www.python.org/downloads/) and [FFmpeg](https://ffmpeg.org/download.html) installed.
+You will need to have [uv](https://docs.astral.sh/uv/getting-started/installation/) and [FFmpeg](https://ffmpeg.org/download.html) installed.
 
 Clone the repository
 
@@ -27,28 +27,20 @@ git clone https://github.com/nathanblaubach/sermons.git
 cd sermons
 ```
 
-Set up a virtual environment and dependencies
+Set up dependencies
 
 ```shell
-# Create venv
-python -m venv venv
-
-# Open venv
-source venv/bin/activate # Linux/Mac
-venv\Scripts\Activate.ps1 # Windows Powershell
-venv\Scripts\activate.bat # Windows CMD
-
 # Install dependencies
-pip install -r requirements.txt
+uv sync
 
 # Install pre-commit hook
-pre-commit install
+uv run pre-commit install
 ```
 
-Run the application (Note: This works without environment setup)
+Run the application
 
 ```shell
-python src/__main__.py
+uv run src/__main__.py
 ```
 
 Run quality checks
@@ -56,8 +48,8 @@ Run quality checks
 Builds will fail if any formatting, linting or test issues arise. Coverage must stay at 100% for unit testable code.
 
 ```shell
-pre-commit run --all-files # Formatting / Linting
-pytest # Unit tests and coverage
+uv run pre-commit run --all-files # Formatting / Linting
+uv run pytest # Unit tests and coverage
 ```
 
 ## Contributors
