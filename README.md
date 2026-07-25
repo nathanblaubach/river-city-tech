@@ -15,25 +15,16 @@ This allows the upload process to happen without the need for manually
 * Creating the video with a fully-fledged video editor
 * Crafting the differing naming conventions of the titles and descriptions for soundcloud and youtube
 
-## Setup
+## Setup/Run
 
 You will need to have [uv](https://docs.astral.sh/uv/getting-started/installation/) and [FFmpeg](https://ffmpeg.org/download.html) installed.
 
-Clone the repository
+Set up source code and dependencies
 
 ```shell
-# Clone this repository and switch to the directory
 git clone https://github.com/nathanblaubach/sermons.git
 cd sermons
-```
-
-Set up dependencies
-
-```shell
-# Install dependencies
 uv sync
-
-# Install pre-commit hook
 uv run pre-commit install
 ```
 
@@ -45,11 +36,9 @@ uv run src/__main__.py
 
 Run quality checks
 
-Builds will fail if any formatting, linting or test issues arise. Coverage must stay at 100% for unit testable code.
-
 ```shell
 uv run pre-commit run --all-files # Formatting / Linting
-uv run pytest # Unit tests and coverage
+uv run pytest                     # Unit tests and coverage
 ```
 
 ## Contributors
