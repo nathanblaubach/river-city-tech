@@ -22,8 +22,8 @@ You will need to have [uv](https://docs.astral.sh/uv/getting-started/installatio
 Set up source code and dependencies
 
 ```shell
-git clone https://github.com/nathanblaubach/sermons.git
-cd sermons
+git clone https://github.com/nathanblaubach/river-city-tech.git
+cd river-city-tech
 uv sync
 uv run pre-commit install
 ```
