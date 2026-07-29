@@ -1,23 +1,19 @@
-# Sermons
+# River City Tech
 
 ## Purpose
 
-Reduce the amount of manual work in the recording upload process
+The tools in this repository reduce the amount of manual work required for technical tasks at River City Church.
 
-Given a recording's audio file title, date, and speaker name, this application generates:
+### Lessons
 
-* Soundcloud Artwork and Audio File
-* Youtube Thumbnail and Video
-* Upload Instructions with values for Soundcloud and Youtube upload fields
+Slows down the videos from our curriculum to allow kids to understand the Bible lessons better
 
-This allows the upload process to happen without the need for manually
+### Sermons
 
-* Creating the video with a fully-fledged video editor
-* Crafting the differing naming conventions of the titles and descriptions for soundcloud and youtube
+Generates sermon upload artifacts and instructions for soundcloud and youtube to
 
-## Lessons
-
-Slow down a batch of lesson video files while keeping audio pitch intact, using FFmpeg.
+* Eliminate the need to use a fully-fledged video editor
+* Eliminate the manual crafting of differing naming conventions of titles and descriptions for soundcloud and youtube
 
 ## Setup/Run
 
@@ -32,16 +28,11 @@ uv sync
 uv run pre-commit install
 ```
 
-Run the sermons application
-
-```shell
-uv run sermons
-```
-
-Run the lessons application
+Run the applications
 
 ```shell
 uv run lessons
+uv run sermons
 ```
 
 Run quality checks
@@ -50,11 +41,3 @@ Run quality checks
 uv run pre-commit run --all-files # Formatting / Linting
 uv run pytest                     # Unit tests and coverage
 ```
-
-## Contributors
-
-- [Nathan Blaubach](https://github.com/nathanblaubach)
-
-## Licenses
-
-- [MIT](https://github.com/nathanblaubach/sermons/blob/main/LICENSE)
