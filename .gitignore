@@ -207,6 +207,6 @@ marimo/_lsp/
 __marimo__/
 
 .vscode/
-src/test/*.jpg
-src/test/*.mp4
-src/test/*.txt
+src/sermons/test/*.jpg
+src/sermons/test/*.mp4
+src/sermons/test/*.txt

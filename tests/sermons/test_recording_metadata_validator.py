@@ -2,8 +2,8 @@ from pathlib import Path
 
 import pytest
 
-from recording_metadata import RecordingMetadata
-from recording_metadata_validator import RecordingMetadataValidator
+from sermons.recording_metadata import RecordingMetadata
+from sermons.recording_metadata_validator import RecordingMetadataValidator
 
 
 @pytest.fixture

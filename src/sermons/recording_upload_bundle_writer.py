@@ -1,10 +1,10 @@
 import shutil
 from pathlib import Path
 
-from instructions_generator import InstructionsGenerator
-from recording_metadata import RecordingMetadata
-from recording_upload_bundle import RecordingUploadBundle
-from video_generator import VideoGenerator
+from sermons.instructions_generator import InstructionsGenerator
+from sermons.recording_metadata import RecordingMetadata
+from sermons.recording_upload_bundle import RecordingUploadBundle
+from sermons.video_generator import VideoGenerator
 
 
 class RecordingUploadBundleWriter:

@@ -3,8 +3,8 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from recording_editor import RecordingEditor
-from recording_metadata import RecordingMetadata
+from sermons.recording_editor import RecordingEditor
+from sermons.recording_metadata import RecordingMetadata
 
 
 class TestPrepareForUpload:

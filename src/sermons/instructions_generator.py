@@ -1,4 +1,4 @@
-from recording_upload_bundle import RecordingUploadBundle
+from sermons.recording_upload_bundle import RecordingUploadBundle
 
 FILE_TEMPLATE = """Upload Instructions
 

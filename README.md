@@ -31,7 +31,7 @@ uv run pre-commit install
 Run the application
 
 ```shell
-uv run src/__main__.py
+uv run sermons
 ```
 
 Run quality checks

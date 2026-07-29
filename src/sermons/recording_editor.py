@@ -1,5 +1,5 @@
-from recording_metadata_form import RecordingMetadataForm
-from recording_upload_bundle_writer import RecordingUploadBundleWriter
+from sermons.recording_metadata_form import RecordingMetadataForm
+from sermons.recording_upload_bundle_writer import RecordingUploadBundleWriter
 
 
 class RecordingEditor:

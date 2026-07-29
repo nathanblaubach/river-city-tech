@@ -2,7 +2,7 @@ import shutil
 import subprocess
 import sys
 
-from recording_upload_bundle import RecordingUploadBundle
+from sermons.recording_upload_bundle import RecordingUploadBundle
 
 
 class VideoGenerator:

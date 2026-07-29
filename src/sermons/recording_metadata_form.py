@@ -3,8 +3,8 @@ from datetime import date, timedelta
 from pathlib import Path
 from tkinter import filedialog, ttk
 
-from recording_metadata import RecordingMetadata
-from recording_metadata_validator import RecordingMetadataValidator
+from sermons.recording_metadata import RecordingMetadata
+from sermons.recording_metadata_validator import RecordingMetadataValidator
 
 
 class RecordingMetadataForm:

@@ -3,9 +3,9 @@ from unittest.mock import ANY, MagicMock, patch
 
 import pytest
 
-from recording_metadata import RecordingMetadata
-from recording_upload_bundle import RecordingUploadBundle
-from recording_upload_bundle_writer import RecordingUploadBundleWriter
+from sermons.recording_metadata import RecordingMetadata
+from sermons.recording_upload_bundle import RecordingUploadBundle
+from sermons.recording_upload_bundle_writer import RecordingUploadBundleWriter
 
 
 class TestWrite:
@@ -17,7 +17,7 @@ class TestWrite:
             self.video_generator, self.instructions_generator
         )
 
-    @patch("recording_upload_bundle_writer.shutil.copy")
+    @patch("sermons.recording_upload_bundle_writer.shutil.copy")
     def test_writes_upload_bundle_for_the_given_metadata(self, mock_copy: MagicMock):
 
         root_directory = Path(__file__).parent

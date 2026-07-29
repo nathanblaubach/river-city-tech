@@ -1,7 +1,7 @@
 import re
 from datetime import datetime
 
-from recording_metadata import RecordingMetadata
+from sermons.recording_metadata import RecordingMetadata
 
 
 class RecordingMetadataValidator:

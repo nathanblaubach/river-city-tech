@@ -3,8 +3,8 @@ from unittest.mock import MagicMock, patch
 
 import pytest
 
-from instructions_generator import InstructionsGenerator
-from recording_upload_bundle import RecordingUploadBundle
+from sermons.instructions_generator import InstructionsGenerator
+from sermons.recording_upload_bundle import RecordingUploadBundle
 
 
 class TestGenerate:
@@ -13,7 +13,7 @@ class TestGenerate:
         self.generator = InstructionsGenerator()
 
     @patch("pathlib.Path.write_text")
-    @patch("instructions_generator.FILE_TEMPLATE")
+    @patch("sermons.instructions_generator.FILE_TEMPLATE")
     def test_generates_upload_instructions(
         self, mock_template: MagicMock, mock_write: MagicMock
     ):
