@@ -15,6 +15,10 @@ This allows the upload process to happen without the need for manually
 * Creating the video with a fully-fledged video editor
 * Crafting the differing naming conventions of the titles and descriptions for soundcloud and youtube
 
+## Lessons
+
+Slow down a batch of lesson video files while keeping audio pitch intact, using FFmpeg.
+
 ## Setup/Run
 
 You will need to have [uv](https://docs.astral.sh/uv/getting-started/installation/) and [FFmpeg](https://ffmpeg.org/download.html) installed.
@@ -28,10 +32,16 @@ uv sync
 uv run pre-commit install
 ```
 
-Run the application
+Run the sermons application
 
 ```shell
 uv run sermons
+```
+
+Run the lessons application
+
+```shell
+uv run lessons
 ```
 
 Run quality checks

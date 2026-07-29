@@ -27,8 +27,11 @@ jobs:
       - name: Run tests
         run: uv run pytest
 
-      - name: Build executable
+      - name: Build sermons executable
         run: uv run pyinstaller --onefile --windowed --name RecordingUploadHelper --add-data "src/sermons/*.jpg;sermons" src/sermons/__main__.py
+
+      - name: Build lessons executable
+        run: uv run pyinstaller --onefile --windowed --name LessonHelper src/lessons/__main__.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
