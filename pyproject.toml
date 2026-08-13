@@ -31,7 +31,6 @@ omit = [
     "src/**/__init__.py",
     "src/**/__main__.py",
     "src/sermons/recording_metadata_form.py",
-    "src/sermons/test.py",
     "src/sermons/video_generator.py",
     "src/lessons/lesson_video_file_selection_form.py"
 ]
