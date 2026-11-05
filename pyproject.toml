@@ -11,7 +11,7 @@ lessons = "lessons.__main__:main"
 
 [dependency-groups]
 dev = [
-    "mypy==2.4.0",
+    "mypy==2.4.1",
     "pre-commit==4.7.0",
     "pyinstaller==6.22.3",
     "pytest==9.2.0",
